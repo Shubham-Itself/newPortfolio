@@ -9,8 +9,8 @@ const Experience = () => {
         Experience / Projects
       </div>
       <p className="text-base text-[#4A5568]">
-        An insight into Shubham's career path, significant contributions, and
-        impactful projects.
+        An insight into Shubham&apos;s career path, significant contributions,
+        and impactful projects.
       </p>
     </div>
   );

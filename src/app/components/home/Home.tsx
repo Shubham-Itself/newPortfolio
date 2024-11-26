@@ -9,7 +9,7 @@ const Home = () => {
         About
       </div>
       <p className="text-base text-[#4A5568]">
-        Read about Shubham's journey, passion, and the person behind the
+        Read about Shubham&apos;s journey, passion, and the person behind the
         professional.
       </p>
     </div>
