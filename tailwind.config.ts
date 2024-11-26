@@ -8,9 +8,23 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        frutiger: ['Frutiger', 'sans-serif'],
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        
+        customBlack: '#e6e6e6'
+      },
+      boxShadow: {
+        'custom': '2px 2px 16px 0px rgba(219,215,215,0.75)',
+      },
+      backgroundImage: {
+        'custom-gradient': `
+          radial-gradient(#444cf7 0.5px, transparent 0.5px),
+          radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px)
+        `,
       },
     },
   },

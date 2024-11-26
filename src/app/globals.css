@@ -2,6 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Frutiger";
+  src: url("/public/fonts/Frutiger.ttf") format("ttf"),
+    url("/public/fonts/Frutiger.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Frutiger";
+  src: url("/public/fonts/Frutiger_bold.ttf") format("ttf"),
+    url("/public/fonts/Frutiger_bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -15,7 +31,213 @@
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+}
+
+/**
+ * ----------------------------------------
+ * animation tilt-in-fwd-tr
+ * ----------------------------------------
+ */
+
+/* .tilt-in-fwd-tr {
+  -webkit-animation: tilt-in-fwd-tr 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+  animation: tilt-in-fwd-tr 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes tilt-in-fwd-tr {
+  0% {
+    -webkit-transform: rotateY(20deg) rotateX(35deg) translate(300px, -300px)
+      skew(-35deg, 10deg);
+    transform: rotateY(20deg) rotateX(35deg) translate(300px, -300px)
+      skew(-35deg, 10deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateY(0) rotateX(0deg) translate(-50%, -50%)
+      skew(0deg, 0deg);
+    transform: rotateY(0) rotateX(0deg) translate(-50%, -50%) skew(0deg, 0deg);
+    opacity: 1;
+  }
+}
+@keyframes tilt-in-fwd-tr {
+  0% {
+    -webkit-transform: rotateY(20deg) rotateX(35deg) translate(300px, -300px)
+      skew(-35deg, 10deg);
+    transform: rotateY(20deg) rotateX(35deg) translate(300px, -300px)
+      skew(-35deg, 10deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateY(0) rotateX(0deg) translate(-50%, -50%)
+      skew(0deg, 0deg);
+    transform: rotateY(0) rotateX(0deg) translate(-50%, -50%) skew(0deg, 0deg);
+    opacity: 1;
+  }
+} */
+
+/**
+ * ----------------------------------------
+ * animation tilt-in-fwd-br
+ * ----------------------------------------
+ */
+
+/* .tilt-in-fwd-br {
+  -webkit-animation: tilt-in-fwd-br 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+  animation: tilt-in-fwd-br 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes tilt-in-fwd-br {
+  0% {
+    -webkit-transform: rotateY(20deg) rotateX(-35deg) translate(300px, 300px)
+      skew(35deg, -10deg);
+    transform: rotateY(20deg) rotateX(-35deg) translate(300px, 300px)
+      skew(35deg, -10deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateY(0) rotateX(0deg) translate(0, 0) skew(0deg, 0deg);
+    transform: rotateY(0) rotateX(0deg) translate(0, 0) skew(0deg, 0deg);
+    opacity: 1;
+  }
+}
+@keyframes tilt-in-fwd-br {
+  0% {
+    -webkit-transform: rotateY(20deg) rotateX(-35deg) translate(300px, 300px)
+      skew(35deg, -10deg);
+    transform: rotateY(20deg) rotateX(-35deg) translate(300px, 300px)
+      skew(35deg, -10deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateY(0) rotateX(0deg) translate(0, 0) skew(0deg, 0deg);
+    transform: rotateY(0) rotateX(0deg) translate(-50%, -50%) skew(0deg, 0deg);
+    opacity: 1;
+  }
+} */
+
+/**
+ * ----------------------------------------
+ * animation tilt-in-right-1
+ * ----------------------------------------
+ */
+
+/* .tilt-in-right-1 {
+  -webkit-animation: tilt-in-right-1 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+  animation: tilt-in-right-1 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes tilt-in-right-1 {
+  0% {
+    -webkit-transform: rotateX(-30deg) translateX(300px) translateY(-50%)
+      skewX(30deg);
+    transform: rotateX(-30deg) translateX(300px) translateY(-50%) skewX(30deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateX(0deg) translateX(-50%) translateY(-50%)
+      skewX(0deg);
+    transform: rotateX(0deg) translateX(-50%) translateY(-50%) skewX(0deg);
+    opacity: 1;
+  }
+}
+@keyframes tilt-in-right-1 {
+  0% {
+    -webkit-transform: rotateX(-30deg) translateX(300px) translateY(-50%)
+      skewX(30deg);
+    transform: rotateX(-30deg) translateX(300px) translateY(-50%) skewX(30deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateX(0deg) translateX(-50%) translateY(-50%)
+      skewX(0deg);
+    transform: rotateX(0deg) translateX(-50%) translateY(-50%) skewX(0deg);
+    opacity: 1;
+  }
+}
+
+.tilt-in-right-1-reverse {
+  -webkit-animation: tilt-in-right-1-reverse 0.6s
+    cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: tilt-in-right-1-reverse 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+}
+
+@-webkit-keyframes tilt-in-right-1-reverse {
+  0% {
+    -webkit-transform: rotateX(0deg) translateX(-50%) translateY(-50%)
+      skewX(0deg);
+    transform: rotateX(0deg) translateX(-50%) translateY(-50%) skewX(0deg);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotateX(-30deg) translateX(100%) translateY(-50%)
+      skewX(30deg);
+    transform: rotateX(-30deg) translateX(100%) translateY(-50%) skewX(30deg);
+    opacity: 0;
+  }
+}
+@keyframes tilt-in-right-1-reverse {
+  0% {
+    -webkit-transform: rotateX(0deg) translateX(-50%) translateY(-50%)
+      skewX(0deg);
+    transform: rotateX(0deg) translateX(-50%) translateY(-50%) skewX(0deg);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotateX(-30deg) translateX(100%) translateY(-50%)
+      skewX(30deg);
+    transform: rotateX(-30deg) translateX(100%) translateY(-50%) skewX(30deg);
+    opacity: 0;
+  }
+} */
+
+.scale-to-right {
+  animation: scale-to-right 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@keyframes scale-to-right {
+  0% {
+    transform: translate(-50%, -50%) scale(0);
+    transform-origin: right center;
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.2;
+  }
+  40% {
+    opacity: 0.4;
+  }
+  60% {
+    opacity: 0.6;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    transform-origin: right center;
+    opacity: 1;
+  }
+}
+
+/* Reverse animation */
+.scale-to-right-reverse {
+  animation: scale-to-right 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both
+    reverse;
+}
+
+/* Transition class */
+.translate125 {
+  transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.bgSet {
+  background-image: url("/img/bgweb.webp");
+  background-size: contain;
+  background-position: right center;
+  background-repeat: no-repeat;
 }
