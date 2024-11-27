@@ -20,7 +20,7 @@ const ProjectWrapper = () => {
       <div className="relative ">
         <div className=" h-[80vh] grid grid-cols-6 grid-rows-5 gap-8">
           <div
-            className={`col-span-2 row-span-3 rounded-[20px] shadow-custom bg-white translate125 overflow-hidden
+            className={`col-span-2 row-span-3 md:col-span-6 md:row-span-3 rounded-[20px] shadow-custom bg-white translate125 overflow-hidden
                  ${
                    isBig
                      ? "translate-x-[-125%] opacity-0"
