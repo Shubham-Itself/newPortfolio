@@ -10,7 +10,7 @@ interface AboutInfoProps {
 const AboutInfo = ({
   aboutInfo,
   setAboutInfo,
-  aboutInfoAnim,
+
   setAboutInfoAnim,
 }: AboutInfoProps) => {
   return (
@@ -38,16 +38,16 @@ const AboutInfo = ({
               : "-translate-y-[600px] opacity-0 "
           }`}
         >
-          Namaste! I'm a passionate Software Engineer with 2 years of experience
-          in developing scalable web applications. Proficient in JavaScript,
-          TypeScript, React.js, Next.js, and Angular.js, I specialize in
-          creating seamless user experiences. <br /> I've worked in domains like
-          banking, food, and AI, building intuitive interfaces and solving
-          complex problems. In AI, I’ve contributed to integrating external data
-          with LLMs, enhancing their capabilities. I’m also passionate about
-          animation and love creating cool, engaging visuals. <br /> By day, I’m
-          a developer; by night, a learner. Let’s bring creativity and
-          innovation to your projects!
+          Namaste! I&apos;m a passionate Software Engineer with 2 years of
+          experience in developing scalable web applications. Proficient in
+          JavaScript, TypeScript, React.js, Next.js, and Angular.js, I
+          specialize in creating seamless user experiences. <br /> I&apos;ve
+          worked in domains like banking, food, and AI, building intuitive
+          interfaces and solving complex problems. In AI, I’ve contributed to
+          integrating external data with LLMs, enhancing their capabilities. I’m
+          also passionate about animation and love creating cool, engaging
+          visuals. <br /> By day, I’m a developer; by night, a learner. Let’s
+          bring creativity and innovation to your projects!
         </div>
         <div
           className={`absolute grayscale right-[20px] bottom-0  ${
