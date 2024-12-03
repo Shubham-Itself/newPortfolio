@@ -14,8 +14,9 @@ const ProjectWrapper = () => {
   const [experienceInfo, setInfoExperience] = useState(false);
   const [aboutInfo, setAboutInfo] = useState(false);
   const [skillsInfo, setSkillsInfo] = useState(false);
+  const [aboutInfoAnim, setAboutInfoAnim] = useState(false);
   return (
-    <div className=" bg-gray-100 relative min-h-screen">
+    <div className=" bg-gray-100 relative min-h-screen overflow-hidden">
       {/* <Image src="/img/bgweb.webp" alt="" fill className="" /> */}
       <div className="absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 w-full px-[80px]">
         <div className="relative ">
@@ -35,6 +36,7 @@ const ProjectWrapper = () => {
                  }`}
               onClick={() => {
                 setAboutInfo(true);
+                setAboutInfoAnim(true);
               }}
             >
               <Home />
@@ -101,7 +103,12 @@ const ProjectWrapper = () => {
             experienceInfo={experienceInfo}
             setInfoExperience={setInfoExperience}
           />
-          <AboutInfo aboutInfo={aboutInfo} setAboutInfo={setAboutInfo} />
+          <AboutInfo
+            aboutInfo={aboutInfo}
+            setAboutInfo={setAboutInfo}
+            aboutInfoAnim={aboutInfoAnim}
+            setAboutInfoAnim={setAboutInfoAnim}
+          />
           <Skillsinfo skillsInfo={skillsInfo} setSkillsInfo={setSkillsInfo} />
         </div>
       </div>
