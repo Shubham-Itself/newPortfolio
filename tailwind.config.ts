@@ -28,6 +28,7 @@ export default {
       },
       screens: {
         md: { max: "768px" },
+        lg: { min: "769px" },
       },
     },
   },
