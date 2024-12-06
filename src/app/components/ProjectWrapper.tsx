@@ -16,13 +16,13 @@ const ProjectWrapper = () => {
   const [skillsInfo, setSkillsInfo] = useState(false);
   const [aboutInfoAnim, setAboutInfoAnim] = useState(false);
   return (
-    <div className=" bg-gray-100 relative min-h-screen overflow-hidden">
+    <div className="h-screen bg-gray-100 relative  overflow-hidden  md:py-[2rem]">
       {/* <Image src="/img/bgweb.webp" alt="" fill className="" /> */}
-      <div className="absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 w-full px-[80px]">
+      <div className="flex items-center justify-center h-full w-full p-[40px] md:px-[1rem] md:py-0  ">
         <div className="relative ">
-          <div className=" h-[80vh] grid grid-cols-6 grid-rows-5 gap-8">
+          <div className="  grid   grid-cols-6 grid-rows-5 md:gap-2 gap-6 md:h-full">
             <div
-              className={`col-span-2 row-span-3 md:col-span-6 md:row-span-3 rounded-[20px] shadow-custom bg-white translate125 overflow-hidden
+              className={`col-span-2 row-span-3    rounded-[20px] shadow-custom bg-white translate125 overflow-hidden 
                  ${
                    isBig
                      ? "translate-x-[-125%] opacity-0"
@@ -43,7 +43,7 @@ const ProjectWrapper = () => {
             </div>
 
             <div
-              className={`col-span-4 row-span-2 col-start-1 row-start-4 bg-white   rounded-[20px] translate125 shadow-custom overflow-hidden ${
+              className={`md:hidden col-span-4 row-span-2 col-start-1  row-start-4 bg-white   rounded-[20px] translate125 shadow-custom overflow-hidden ${
                 isBig
                   ? "translate-x-[-125%] opacity-0"
                   : experienceInfo
@@ -61,7 +61,7 @@ const ProjectWrapper = () => {
               <Contact />
             </div>
             <div
-              className={`col-span-2 row-span-3 col-start-3 row-start-1 bg-white  rounded-[20px] translate125 shadow-custom overflow-hidden ${
+              className={`col-span-2 row-span-3 col-start-3 row-start-1  bg-white   rounded-[20px] translate125 shadow-custom overflow-hidden ${
                 isBig
                   ? "translate-x-[-231%] opacity-0"
                   : experienceInfo
@@ -79,7 +79,7 @@ const ProjectWrapper = () => {
               <Skills />
             </div>
             <div
-              className={`col-span-2 row-span-5 col-start-5 row-start-1 bg-white  rounded-[20px] translate125 origin-right origin-center overflow-hidden shadow-custom ${
+              className={`col-span-2 row-span-5 col-start-5 row-start-1  bg-white  rounded-[20px] translate125 origin-right origin-center overflow-hidden shadow-custom ${
                 isBig
                   ? "scale-x-125 opacity-0"
                   : experienceInfo
@@ -95,6 +95,25 @@ const ProjectWrapper = () => {
               }}
             >
               <Experience />
+            </div>
+
+            <div
+              className={`lg:hidden col-span-4 row-span-2 col-start-1 row-start-4  bg-white   rounded-[20px] translate125 shadow-custom overflow-hidden ${
+                isBig
+                  ? "translate-x-[-125%] opacity-0"
+                  : experienceInfo
+                  ? "scale-y-125 opacity-0 origin-bottom-left"
+                  : aboutInfo
+                  ? "translate-y-[125%] opacity-0"
+                  : skillsInfo
+                  ? "translate-y-[125%] opacity-0"
+                  : "translate-0 opacity-100"
+              }`}
+              onClick={() => {
+                setInfoExperience(true);
+              }}
+            >
+              <Contact />
             </div>
           </div>
 
