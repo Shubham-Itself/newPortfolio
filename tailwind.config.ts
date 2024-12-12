@@ -18,7 +18,7 @@ export default {
         customBlack: "#e6e6e6",
       },
       boxShadow: {
-        custom: "2px 2px 16px 0px rgba(219,215,215,0.75)",
+        custom: "2px 2px 16px 0px rgba(0,0,0,0.5)",
       },
       backgroundImage: {
         "custom-gradient": `

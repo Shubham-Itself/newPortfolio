@@ -33,7 +33,7 @@ const HomeBig = ({ isBig, setIsBig }: HomeBigProps) => {
   ];
   return (
     <div
-      className={`absolute  top-2/4 left-2/4 translate125 shadow-custom overflow-hidden origin-right origin-center w-full h-full bg-white rounded-[20px] overflow-y-auto ${
+      className={`absolute  top-2/4 left-2/4 translate125 shadow-custom overflow-hidden origin-right origin-center w-full h-full bg-[#1E1E1E] rounded-[20px] overflow-y-auto ${
         isBig
           ? "scale-x-100 -translate-x-2/4 -translate-y-2/4  opacity-100"
           : "scale-x-0 -translate-x-2/4 -translate-y-2/4  opacity-0"
@@ -50,7 +50,7 @@ const HomeBig = ({ isBig, setIsBig }: HomeBigProps) => {
         </div>
         <div className="flex  flex-col relative">
           <h1
-            className={`text-[25px] font-bold text-[#2E3A59]   ${
+            className={`text-[25px] font-bold text-[#E0E0E0]   ${
               isBig ? "tracking-in-expand !delay-[0.9s]" : ""
             }`}
           >
@@ -76,7 +76,7 @@ const HomeBig = ({ isBig, setIsBig }: HomeBigProps) => {
                 </svg>
               </div>
               <div>
-                <div className="flex flex-col gap-[10px] text-[#4A5568]">
+                <div className="flex flex-col gap-[10px] text-[#B3B3B3]">
                   <h1 className="text-[25px] font-semibold">
                     {item.companyName}
                   </h1>

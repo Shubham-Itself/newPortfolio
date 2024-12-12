@@ -18,11 +18,11 @@ const ProjectWrapper = () => {
   return (
     <div className="h-screen bg-gray-100 relative  overflow-hidden  md:py-[2rem]">
       {/* <Image src="/img/bgweb.webp" alt="" fill className="" /> */}
-      <div className="flex items-center justify-center h-full w-full p-[40px] md:px-[1rem] md:py-0  ">
+      <div className="flex items-center justify-center h-full w-full p-[40px] md:px-[1rem] md:py-0  bg-[#121212]">
         <div className="relative md:h-full">
           <div className="  grid   grid-cols-6 grid-rows-5 md:grid-rows-4 md:grid-cols-4 md:gap-4 gap-6 md:h-full">
             <div
-              className={`col-span-2 row-span-3 md:row-span-2    rounded-[20px] shadow-custom bg-white translate125 overflow-hidden 
+              className={`col-span-2 row-span-3 md:row-span-2    rounded-[20px] shadow-custom bg-[#1E1E1E] translate125 overflow-hidden 
                  ${
                    isBig
                      ? "translate-x-[-125%] opacity-0"
@@ -43,7 +43,7 @@ const ProjectWrapper = () => {
             </div>
 
             <div
-              className={`md:hidden col-span-4 row-span-2 col-start-1  row-start-4 bg-white   rounded-[20px] translate125 shadow-custom overflow-hidden ${
+              className={`md:hidden col-span-4 row-span-2 col-start-1  row-start-4 bg-[#1E1E1E]   rounded-[20px] translate125 shadow-custom overflow-hidden ${
                 isBig
                   ? "translate-x-[-125%] opacity-0"
                   : experienceInfo
@@ -61,7 +61,7 @@ const ProjectWrapper = () => {
               <Contact />
             </div>
             <div
-              className={`col-span-2 row-span-3 md:row-span-2 col-start-3 md:col-start-1 md:row-start-3 row-start-1  bg-white   rounded-[20px] translate125 shadow-custom overflow-hidden ${
+              className={`col-span-2 row-span-3 md:row-span-2 col-start-3 md:col-start-1 md:row-start-3 row-start-1  bg-[#1E1E1E] rounded-[20px] translate125 shadow-custom overflow-hidden ${
                 isBig
                   ? "translate-x-[-231%] opacity-0"
                   : experienceInfo
@@ -79,7 +79,7 @@ const ProjectWrapper = () => {
               <Skills />
             </div>
             <div
-              className={`col-span-2 row-span-5 col-start-5 row-start-1 md:row-start-1 md:col-start-3 md:row-end-3  bg-white  rounded-[20px] translate125 origin-right origin-center overflow-hidden shadow-custom ${
+              className={`col-span-2 row-span-5 col-start-5 row-start-1 md:row-start-1 md:col-start-3 md:row-end-3 bg-[#1E1E1E]  rounded-[20px] translate125 origin-right origin-center overflow-hidden shadow-custom ${
                 isBig
                   ? "scale-x-125 opacity-0"
                   : experienceInfo
@@ -98,7 +98,7 @@ const ProjectWrapper = () => {
             </div>
 
             <div
-              className={`lg:hidden col-span-4 md:col-span-2 row-span-2 col-start-1 row-start-4 md:row-start-3  md:col-start-3 bg-white   rounded-[20px] translate125 shadow-custom overflow-hidden ${
+              className={`lg:hidden col-span-4 md:col-span-2 row-span-2 col-start-1 row-start-4 md:row-start-3  md:col-start-3 bg-[#1E1E1E]   rounded-[20px] translate125 shadow-custom overflow-hidden ${
                 isBig
                   ? "translate-x-[-125%] opacity-0"
                   : experienceInfo

@@ -15,7 +15,7 @@ const AboutInfo = ({
 }: AboutInfoProps) => {
   return (
     <div
-      className={`absolute top-2/4 left-2/4 translate125 shadow-custom overflow-hidden origin-top-left w-full h-full bg-white rounded-[20px]    ${
+      className={`absolute top-2/4 left-2/4 translate125 shadow-custom overflow-hidden origin-top-left w-full h-full bg-[#1E1E1E] rounded-[20px]    ${
         aboutInfo
           ? "scale-100 -translate-x-2/4 -translate-y-2/4  opacity-100"
           : "scale-0 -translate-x-2/4 -translate-y-2/4  opacity-0"
@@ -32,7 +32,7 @@ const AboutInfo = ({
           <Image src="/img/cross-icon.svg" alt="" width={20} height={20} />
         </div>
         <div
-          className={` text-xl mt-[50px] ml-[50px] w-[70%] text-[#4A5568]   ${
+          className={` text-xl mt-[50px] ml-[50px] w-[70%] text-[#B3B3B3]   ${
             aboutInfo
               ? "translate-y-[0px] opacity-100 translateanim"
               : "-translate-y-[600px] opacity-0 "
@@ -57,7 +57,7 @@ const AboutInfo = ({
           <Image src="/img/bgweb.webp" alt="" width={250} height={250} />
         </div>
         <div
-          className={`absolute bottom-0 right-[136px] text-[#2E3A59] z-[-1]   ${
+          className={`absolute bottom-0 right-[136px] text-[#E0E0E0] z-[-1]   ${
             aboutInfo
               ? "translate-x-[0px] opacity-100 translateanim !delay-[0.2s]"
               : "-translate-x-[600px] opacity-0 "

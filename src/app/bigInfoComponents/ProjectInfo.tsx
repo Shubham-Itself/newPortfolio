@@ -32,12 +32,14 @@ const ProjectInfo = ({ isBig }: ProjectInfo) => {
     },
   ];
   return (
-    <div
-      className={`text-[25px] font-bold text-[#2E3A59] mt-[20px]   ${
-        isBig ? "tracking-in-expand !delay-[0.9s]" : ""
-      }`}
-    >
-      Projects
+    <div className={`text-[25px] font-bold text-[#2E3A59] mt-[20px]  `}>
+      <p
+        className={`text-[25px] font-bold text-[#E0E0E0]  ${
+          isBig ? "tracking-in-expand !delay-[0.9s]" : ""
+        }`}
+      >
+        Projects
+      </p>
       {ProjectInfo.map((item, index) => (
         <div className="flex gap-[20px] mt-[20px] card" key={index}>
           <div className="w-[40px] h-[40px] rounded-full flex items-center justify-center bg-[#2E3A59] shadow-custom">
@@ -52,7 +54,7 @@ const ProjectInfo = ({ isBig }: ProjectInfo) => {
             </svg>
           </div>
 
-          <div className="flex flex-col gap-[10px] text-[#4A5568] w-full">
+          <div className="flex flex-col gap-[10px] text-[#B3B3B3] w-full">
             <div className="text-[25px] font-semibold flex justify-between w-full">
               <h1>{item.name}</h1>
               <p className="font-normal text-[22px]">{item.techStack}</p>

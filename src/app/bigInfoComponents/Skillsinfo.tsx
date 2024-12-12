@@ -181,7 +181,7 @@ const Skillsinfo = ({ skillsInfo, setSkillsInfo }: SkillsinfoProps) => {
 
   return (
     <div
-      className={`absolute top-2/4 left-2/4 translate125 shadow-custom overflow-hidden origin-top w-full h-full bg-white rounded-[20px] overflow-y-auto  ${
+      className={`absolute top-2/4 left-2/4 translate125 shadow-custom overflow-hidden origin-top w-full h-full bg-[#1E1E1E] rounded-[20px] overflow-y-auto  ${
         skillsInfo
           ? "scale-100 -translate-x-2/4 -translate-y-2/4  opacity-100"
           : "scale-0 -translate-x-2/4 -translate-y-2/4  opacity-0"
@@ -201,12 +201,12 @@ const Skillsinfo = ({ skillsInfo, setSkillsInfo }: SkillsinfoProps) => {
             {SkillSet.map((skills, index) => (
               <div
                 style={{ transitionDelay: `${(index + 1) * 0.6}s` }}
-                className={`border border-[#E0E6E9] rounded-[10px] overflow-hidden mb-[20px] last:mb-[0px] ${
+                className={`border border-[#292929] rounded-[10px] overflow-hidden mb-[20px] last:mb-[0px] ${
                   skillsInfo ? "fade-in-bottom " : "hidden"
                 } `}
                 key={index}
               >
-                <div className="bg-[#F1F1F1] p-[15px]">
+                <div className="bg-[#292929] p-[15px]">
                   <CircleComponent />
                 </div>
                 <div className="p-[20px] ">
@@ -219,7 +219,7 @@ const Skillsinfo = ({ skillsInfo, setSkillsInfo }: SkillsinfoProps) => {
                         height={30}
                       />
                     </div>
-                    <p className="text-[25px] font-bold text-[#2E3A59]">
+                    <p className="text-[25px] font-bold text-[#E0E0E0]">
                       {skills.title}
                     </p>
                   </div>
@@ -244,7 +244,7 @@ const Skillsinfo = ({ skillsInfo, setSkillsInfo }: SkillsinfoProps) => {
                               ))}
                             </div>
                             <div className=" relative w-1/2 bg-gray-200 rounded-full h-[4px] ">
-                              <p className="absolute top-[-22px] text-[#4A5568] font-semibold right-0">
+                              <p className="absolute top-[-22px] text-[#B3B3B3] font-semibold right-0">
                                 85
                               </p>
                               <div
@@ -271,7 +271,7 @@ const Skillsinfo = ({ skillsInfo, setSkillsInfo }: SkillsinfoProps) => {
                             </div>
                             {svg.pathCombinationTwo.length > 0 && (
                               <div className=" relative w-1/2 bg-gray-200 rounded-full h-[4px] ">
-                                <p className="absolute top-[-22px] text-[#4A5568] font-semibold right-0">
+                                <p className="absolute top-[-22px] text-[#B3B3B3] font-semibold right-0">
                                   95
                                 </p>
                                 <div

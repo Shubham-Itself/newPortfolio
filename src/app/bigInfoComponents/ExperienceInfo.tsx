@@ -10,7 +10,7 @@ const ExperienceInfo = ({
 }: ExperienceInfoProps) => {
   return (
     <div
-      className={`absolute top-2/4 left-2/4 translate125 shadow-custom overflow-hidden origin-bottom-left w-full h-full bg-white rounded-[20px]  ${
+      className={`absolute top-2/4 left-2/4 translate125 shadow-custom overflow-hidden origin-bottom-left w-full h-full bg-[#1E1E1E] rounded-[20px]  ${
         experienceInfo
           ? "scale-100 -translate-x-2/4 -translate-y-2/4  opacity-100"
           : "scale-0 -translate-x-2/4 -translate-y-2/4  opacity-0"
